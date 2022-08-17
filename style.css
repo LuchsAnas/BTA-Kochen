@@ -168,4 +168,6 @@ input{
   padding: 20px
 }
 
-
+li{
+  list-style:none ;
+}
