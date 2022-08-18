@@ -5,6 +5,7 @@ html {
   font-family: 'Candal', sans-serif;
   line-height: 1.5;
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -79,6 +80,16 @@ p{
   color:white;
 }
 
+li span{
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+p span{
+  font-weight: 600;
+}
 @media(max-width:1023px){
   .main-nav {display:none;}
 }
@@ -120,13 +131,49 @@ img{max-width: 100%;}
     text-align: center;
     padding:0 15;
   }
-  @media(max-width:1023px){
-    .article{
-   display: flex;
-   flex-direction: column;
-   }
- }
 
+  .social li, .legal li{
+    list-style:none ;
+    display:flex;
+  }
+  
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media(max-width:1023px){
+    .article
+    {
+      display: flex;
+      flex-direction: column;
+      }
+    footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   }
+   
+    
+  .legal ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.social {
+  font-size: 120%;
+}
 .b{
   display:flex;
   justify-content: center;
@@ -168,6 +215,5 @@ input{
   padding: 20px
 }
 
-li{
-  list-style:none ;
-}
+
+
