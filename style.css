@@ -118,14 +118,15 @@ h2{text-align: center;}
 
 img{max-width: 100%;}
 
-.article{ 
+
+div{ 
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
   flex: 1,4;
   padding: 50px;
   gap: 20px;
+  background-color: white;
   }
   .article h3, .class p{
     text-align: center;
